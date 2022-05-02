@@ -133,16 +133,50 @@
 			color: black;
 			letter-spacing: 1px;
 			font-size: 25px;
-			justify-content: space-around;
 		}
 		.table-creation {
 			height: 100vh;
 			width: 100%;
-			background-image: url("");
+			background-image: url("/Lined_Paper_Background_photos.webp");
+			background-size: cover;
+			background-position: center;
+			padding: 40px 0px;
 		}
+		.table h3 {
+			color: black;
+			letter-spacing: 1px;
+			font-size: 40px;
+		}
+
 		.table {
 			margin: 50px auto;
 			text-align: center;
+		}
+		.table-row {
+			display: table;
+			width: 80%;
+			margin: 10px auto;
+			font-family: sans-serif;
+			border: 2px solid red;
+			padding: 12px 0;
+			color: #555;
+			box-shadow: 0 1px 4px 0px rgba(0,0,50,0.3);
+		}
+		.table-cell {
+			display: table-cell;
+			width: 50%;
+			text-align: center;
+			font-size: 25px;
+			padding: 4px 0;
+			border-right: 1px solid red;
+			vertical-align: middle;
+
+		}
+		.table-head {
+			background: rgb(108, 108, 239);
+			color: rgb(28, 28, 30);
+			font-weight: 600;
+
 		}
 	</style>
 </head>
@@ -214,12 +248,36 @@
 	<section class="table-creation">
 		<div class="table">
 			<h3>Hobbies & Interests</h3>
-			<div class="table-row">
+			<div class="table-row table-head">
 				<div class="table-cell">
 					<p>Hobbies</p>
 				</div>
-				<div>
+				<div class="table-cell">
 					<p>Interests</p>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell">
+					<p>Playing cricket</p>
+				</div>
+				<div class="table-cell">
+					<p>Coding</p>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell">
+					<p>Playing video games</p>
+				</div>
+				<div class="table-cell">
+					<p>Travelling</p>
+				</div>
+			</div>
+			<div class="table-row">
+				<div class="table-cell">
+					<p>Reading Books</p>
+				</div>
+				<div class="table-cell">
+					<p>Driving</p>
 				</div>
 			</div>
 		</div>
